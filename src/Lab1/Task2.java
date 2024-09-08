@@ -30,7 +30,7 @@ public class Task2 {
                 result = a / b;
                 break;
             default:
-                System.out.println("Некорректна дія.");
+                System.out.println("Некоректна дія.");
         }
         System.out.println(a + " " + d + " " + b +  " = " + result);
     }
