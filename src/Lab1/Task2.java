@@ -7,7 +7,7 @@ public class Task2 {
         Scanner input = new Scanner(System.in);
         System.out.println("Простий парсер виразів.");
         System.out.println("Наприклад: 2 + 4 ...");
-        System.out.print("Введіть простий вираз:");
+        System.out.print("Введіть простий вираз: ");
         String problem = input.nextLine();
 
         String[] split = problem.split(" ");
