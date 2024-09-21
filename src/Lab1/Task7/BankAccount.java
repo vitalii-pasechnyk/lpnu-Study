@@ -20,10 +20,19 @@ public class BankAccount {
         double fee = 0;
 
         if (this.bank == target.bank) {
-            fee = this.name.equals(target.name) ? 0 : 0.03;
+            if (this.name.equals(target.name)) {
+                fee = 0;
+            } else {
+                fee = 0.03;
+            }
         } else {
-            fee = this.name.equals(target.name) ? 0.02 : 0.06;
+            if (this.name.equals(target.name)) {
+                fee = 0.02;
+            } else {
+                fee = 0.06;
+            }
         }
+
 
         double totalAmount = amount * (1 + fee);
         if (balance < totalAmount) throw new IllegalArgumentException("Недостатньо коштів!");
