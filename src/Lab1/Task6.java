@@ -19,9 +19,6 @@ public class Task6 {
     public static final double CADtoUAH = 30.70;
     public static final double CADtoUSD = 0.74;
     public static final double CADtoEUR = 0.66;
-    public static final double UAHtoUSD = 1.0 / USDtoUAH;
-    public static final double UAHtoEUR = 1.0 / EURtoUAH;
-    public static final double UAHtoCAD = 1.0 / CADtoUAH;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
