@@ -24,6 +24,7 @@ public class Task1 {
         } else {
             String binary = "";
 
+
             while (n > 0) {
                 binary = (n % 2) + binary;
                 n = n / 2;
