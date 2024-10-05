@@ -19,6 +19,8 @@ public class Task1 {
     public static void toBinary(int n) {
         if (n == 0) {
             System.out.println(0);
+        } else if (n < 0) {
+            System.out.println("Incorrent.");
         } else {
             String binary = "";
 
