@@ -22,23 +22,26 @@ public class Task2 {
         String d = split[1];
         double b = Double.parseDouble(split[2]);
 
-        double result = 0;
+        double result;
         switch (d) {
             case "+":
                 result = a + b;
+                System.out.println(a + " " + d + " " + b +  " = " + result);
                 break;
             case "-":
                 result = a - b;
+                System.out.println(a + " " + d + " " + b +  " = " + result);
                 break;
             case "*":
                 result = a * b;
+                System.out.println(a + " " + d + " " + b +  " = " + result);
                 break;
             case "/":
                 result = a / b;
+                System.out.println(a + " " + d + " " + b +  " = " + result);
                 break;
             default:
                 System.out.println("Некоректна дія.");
         }
-        System.out.println(a + " " + d + " " + b +  " = " + result);
     }
 }

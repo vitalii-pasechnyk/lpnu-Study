@@ -2,23 +2,25 @@ package Lab1;
 
 public class Task5 {
     public static void main(String[] args) {
-        String[][] martix = {
-                {"iphone", "xiaomi", "samsung"},
-                {"xiaomi", "poco", "oppo"},
-                {"pixel", "redmi", "xiaomi"}
+        String[][] matrix = {
+                {"iphone", "xiaomi", "samsung", "htc"},
+                {"xiaomi", "poco", "oppo", "nokia"},
+                {"pixel", "redmi", "xiaomi", "microsoft"},
+                {"xiaomi", "nokia", "htc", "microsoft"}
         };
 
-        String ss = "xiaomi";
+        String substring = "nokia";
 
-        int count = countSubstringInMatrix(martix, ss);
-        System.out.println("Number of Substring " + ss + ": " + count );
+        int count = countSubstringInMatrix(matrix, substring);
+        System.out.println("Number of occurrences of " + substring + ": " + count);
     }
+
     public static int countSubstringInMatrix(String[][] matrix, String substring) {
         int count = 0;
 
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                if (matrix[i][j].contains(substring)) {
+        for (String[] row : matrix) {
+            for (String element : row) {
+                if (element.contains(substring)) {
                     count++;
                 }
             }
@@ -26,5 +28,4 @@ public class Task5 {
 
         return count;
     }
-
 }

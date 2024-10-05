@@ -17,7 +17,7 @@ public class CharCount {
     public void incrementCount() {
         count++;
     }
-    public String toStringM() {
+    public String toString() {
         return "Symbol: " + symbol + " Count: " + count + "\n";
     }
 }

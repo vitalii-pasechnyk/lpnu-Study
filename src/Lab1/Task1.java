@@ -19,16 +19,15 @@ public class Task1 {
     public static void toBinary(int n) {
         if (n == 0) {
             System.out.println(0);
-            return;
+        } else {
+            String binary = "";
+
+            while (n > 0) {
+                binary = (n % 2) + binary;
+                n = n / 2;
+            }
+
+            System.out.println(binary);
         }
-
-        StringBuilder binary = new StringBuilder();
-
-        while (n > 0) {
-            binary.insert(0, n % 2);
-            n /= 2;
-        }
-
-        System.out.println(binary.toString());
     }
 }
