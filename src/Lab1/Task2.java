@@ -40,8 +40,12 @@ public class Task2 {
                 System.out.println(a + " " + d + " " + b +  " = " + result);
                 break;
             case "/":
-                result = a / b;
-                System.out.println(a + " " + d + " " + b +  " = " + result);
+                if (b == 0) {
+                    System.out.println("Помилка: ділення на нуль!");
+                } else {
+                    result = a / b;
+                    System.out.println(a + " " + d + " " + b + " = " + result);
+                }
                 break;
             default:
                 System.out.println("Некоректна дія.");
