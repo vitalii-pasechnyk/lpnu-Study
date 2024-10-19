@@ -13,14 +13,15 @@ public class Task2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Простий парсер виразів.");
-        System.out.println("Наприклад: 2 + 4 ...");
-        System.out.print("Введіть простий вираз: ");
-        String problem = input.nextLine();
 
-        String[] split = problem.split(" ");
-        double a = Double.parseDouble(split[0]);
-        String d = split[1];
-        double b = Double.parseDouble(split[2]);
+        System.out.print("Введи перше число: ");
+        double a = input.nextDouble();
+
+        System.out.print("Введи друге число: ");
+        double b = input.nextDouble();
+
+        System.out.print("Введи дію, яку хочеш виконати між цими числами: ");
+        String d = input.next();
 
         double result;
         switch (d) {
