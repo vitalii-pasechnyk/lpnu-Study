@@ -23,6 +23,8 @@ public class Task2 {
         System.out.print("Введи дію, яку хочеш виконати між цими числами: ");
         String d = input.next();
 
+        System.out.println("Ти ввів: " + a + " " + d + " " + b + "\n");
+
         double result;
         switch (d) {
             case "+":
